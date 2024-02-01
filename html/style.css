@@ -1,0 +1,14 @@
+.h{
+    color: red;
+     background-color:yellow ;
+      text-align: center;
+       text-transform: capitalize; 
+       font-family: sans-serif;
+        letter-spacing: 4px ;
+        border: 1px solid black;
+         border-radius: 50px;
+         text-shadow: 2px 2px 5px blue; 
+}
+#a{
+    background-color: black;
+}
