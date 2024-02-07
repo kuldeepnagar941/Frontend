@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* .container{
+            width: 67%;
+            border: 2px solid black;
+            height: 550px;
+            background-color: blueviolet;
+            margin: auto;
+            position:  relative ;
+            top: 50px;   
+        } */
+        .box{
+            width: 40%;
+            height: 500px;
+            border: 2px solid black;
+            background-color: bisque;
+            margin: 50px;
+            padding-top: 30px;
+            /* position: relative;
+            top: 50px; */
+            border-radius: 10px;
+            
+        }
+        .sign{
+            text-align: center;
+            font-size: 30px;
+        }
+        .fb{
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+           width: 200px;
+           height: 70px;
+           padding: 15px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+         position: relative;
+         font-size: 18px;
+           -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+           
+        }
+        .img{
+            width: 30%;
+            height: 60%;
+        }
+        .gg{
+            color: black;
+            background-color:white;
+            border-radius: 10px;
+           width: 200px;
+           height: 70px;
+           padding: 15px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+         position: relative;
+         font-size: 18px;
+           -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+            
+        }
+        .txt{
+            font-size: 50%;
+            
+        }
+        .tt{
+            width: 100%;
+            height: 100%;
+            padding-bottom: 12px;
+            border-radius: 5px;
+            padding-top: 30px;
+            font-size: 50;
+            
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="box">
+            <form class="sign">Sign In With
+                <a href="facebook.com" class="fb"> <img src="https://tse1.mm.bing.net/th?id=OIP.55DCXbXlKDgEBoZhKxpzLAHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121" class="img" alt="">Facebook</a>
+                <a href="google.com" class="gg"> <img src="https://tse1.mm.bing.net/th?id=OIP.AfKMLf4rKX7EqOSAVpujIQHaEK&pid=Api&rs=1&c=1&qlt=95&h=180" class="img" alt=""> Google</a>
+                <label for="" class="txt">username</label> <br>
+                <input type="text" class="tt">
+
+                <label for="" class="txt">password</label> <br>
+                <input class="tt" type="password" >
+
+                <button class="btn">Sign In</button>
+            </form>
+        </div>
+    
+</body>
+</html>
