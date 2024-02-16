@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .fixbox {
+            height: 100vh;
+            width: 22%;
+            border: 1px solid black;
+            position: fixed;
+        }
+        .boxA{
+            height: 60%;
+            width: 52%;
+            border: 1px solid black;
+            margin: 10%;
+        }
+        .boxA1{
+            height: 40%;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 3%;
+        }
+        .boxA2{
+            height: 60%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .boxA2 h2{
+            font-weight: 500;
+            font-family: "Raleway", sans-serif;
+            margin-top: 13%;
+            
+        }
+        .boxA2 p{
+            
+            font-family: "Raleway", sans-serif;
+            margin-top: 13%;
+            
+        }
+        .boxA2 h4{
+            
+            font-family: "Raleway", sans-serif;
+            margin-top: 12%;
+            font-weight: 100;
+            margin-left: 15%;
+            
+        }
+        .boxA2 i{
+             margin-top: 10%;
+            /* color: yellow; */
+        }
+        /* .fixbox img{
+            height: 20%;
+            width: 40%;
+            margin: 10% 10%;
+        } */
+
+        .unfixbox {
+            height: 500vh;
+            width: 78%;
+            border: 1px solid black;
+            background-color: #f1f1f1;
+            position: absolute; 
+            right: 0px;
+            top: 0px;
+
+        }
+
+        .box1 {
+            height: 24vh;
+            width: 100%;
+            border: 1px solid black;
+            /* background-color: blue; */
+        }
+        .box1 h1{
+            font-weight: bolder;
+            font-family: "Raleway", sans-serif;
+            font-size: 36px ;   
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            padding: 1.5%;
+        }
+        .box2{
+            width: 100%;
+            height: 60vh;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box2inner{
+            height: 94%;
+            width: 30%;
+            border: 1px solid black;
+        }
+        .box2innerA{
+            height: 60%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .box2innerB{
+            height: 40%;
+            width: 100%;
+            border: 1px solid black;
+            background-color: white;
+        }
+        .box2innerB h2 {
+            font-family: "Raleway", sans-serif;
+            line-height: 1.5;
+            font-size: 17px;
+            font-weight: bolder;
+            margin: 2%;
+            font-weight: 600;
+        }
+        .box2innerB p {
+            font-family: "Raleway", sans-serif;
+            line-height: 1.5;
+            margin: 2%;
+        }
+        .box3{
+            height: 24vh;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .box4{
+            height: 50vh;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .box4inner{
+            height: 100%;
+            width: 48%;
+            border: 1px solid black;
+        }
+        .box5{
+            height: 26vh;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .box5 h2{
+            font-family: "Raleway", sans-serif;
+            font-size: 19px;
+            font-weight: bolder;
+            margin: 1% 2%;
+        }
+        .box5 p {
+            font-family: "Raleway", sans-serif;
+            line-height: 1.5;
+            margin: 2%;
+        }
+
+
+        
+      
+
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="fixbox">
+        <div class="boxA">
+            <div class="boxA1">
+                <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div class="boxA2">
+                <h2>PORTFOLIO</h2>
+                <p>Templete by w3.CSS</p>
+                <h4>PORTFOLIO</h4>
+                <H4>ABOUT</H4>
+                <h4>CONTACT</h4>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-snapchat"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="fa-brands fa-linkedin"></i>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="unfixbox">
+        <div class="box1">
+            <h1>My Portfolio</h1>
+        </div>
+        <div class="box2">
+            <div class="box2inner">
+                <div class="box2innerA">
+                    <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="box2innerB">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+            <div class="box2inner">
+                <div class="box2innerA">
+                    <img src="https://www.w3schools.com/w3images/lights.jpg" alt=""  height="100%" width="100%">
+                </div>
+                <div class="box2innerB">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+            <div class="box2inner">
+                <div class="box2innerA">
+                    <img src="https://www.w3schools.com/w3images/nature.jpg" alt=""  height="100%" width="100%">
+                </div>
+                <div class="box2innerB">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box2inner">
+                <div class="box2innerA">
+                    <img src="https://www.w3schools.com/w3images/p1.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="box2innerB">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+            <div class="box2inner">
+                <div class="box2innerA">
+                    <img src="https://www.w3schools.com/w3images/p2.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="box2innerB">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+            <div class="box2inner">
+                <div class="box2innerA">
+                    <img src="https://www.w3schools.com/w3images/p3.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="box2innerB">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+        </div>
+    <div class="box3"></div>   
+    <div class="box4">
+        <div class="box4inner">
+            <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="" width="100%"height="100%">
+        </div>
+        <div class="box4inner">
+            <img src="https://www.w3schools.com/w3images/me2.jpg" alt="" width="100%" height="100%">
+        </div>
+    </div> 
+    <div class="box5">
+            <h2>About Me</h2>
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+</body>
+
+</html>
