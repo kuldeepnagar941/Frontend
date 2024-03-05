@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .header{
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .logo{
+            font-family: sans-serif;
+            border: 1px solid black;
+        }
+        .header ul{
+            display: flex;
+            text-decoration: none;
+            border: 1px solid black;
+            color: blue;
+            
+        }
+        .header li{
+            margin: 0px 20px;
+            text-decoration: none;
+        }
+        .symbol{
+            margin: 10px;
+        }
+        @media (max-width:400px) {
+            .header ul{
+                display: none;
+            }
+            .symbol{
+                display: block;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">LOGO</div>
+        <ul>
+            <li>menu</li>
+            <li>about us</li>
+            <li>Contact</li>
+            <li>blog</li>
+        </ul>
+        <div class="symbol">===</div>
+    </div>
+</body>
+</html>
