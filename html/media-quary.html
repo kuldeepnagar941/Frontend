@@ -44,6 +44,32 @@
             }
             
         }
+        .box1{
+            border: 1px solid black;
+            display: flex;
+        }
+        .box2{
+            border: 1px solid black;
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+        }
+        .box3{
+            border: 1px solid black;
+            height: 400px;
+            width: 400px;
+            background-color: blueviolet;
+        }
+        @media (max-width:400px) {
+            .box2{
+                background-color: black;
+            }
+            .box3{
+                background-color: red;
+            }
+            
+        }
+
     </style>
 </head>
 <body>
@@ -56,6 +82,10 @@
             <li>blog</li>
         </ul>
         <div class="symbol">===</div>
+    </div>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
     </div>
 </body>
 </html>
