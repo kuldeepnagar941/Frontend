@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>REGex Software</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
@@ -71,6 +71,9 @@
             align-items: center;
             justify-content: space-evenly;
             
+        }
+        .box2innerC{
+            display: none;
         }
         .box2innerB a{
             font-size: large;
@@ -803,31 +806,240 @@
             color: #242D6F;
         }
         .box18big{
-            border: 1px solid black;
+            /* border: 1px solid black; */
             padding: 50px 90px;
         }
         .box18{
-            border:  1px solid black;
+            /* border:  1px solid black; */
             display: flex;
+            width: 80vw;
             background-color: #f7f6f6ea;;
         }
         .box18imgbox{
-            border: 1px solid black;
+            /* border: 1px solid black; */
             font-family: sans-serif;
             color: #242D6F;
+            width: 50%;
+        }
+        .box18imgbox img{
+            width: 500px;
+            height: 670px;
         }
         .box18imgbox h1{
             margin-left: 10px;
         }
         .box18formbox{
-            border: 1px solid black;
+            /* border: 1px solid black; */
+            width: 50%;
+
         }
-        .box19big{
-            border: 1px solid black;
-        }
-        .box19{
-            border: 1px solid black;
-        }
+        .forum{
+  
+    background-color: rgb(36, 45, 111);
+    padding: 40px 10px;
+    
+}
+.nameDIV{
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+.inputt{
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    width: 48%;
+    margin: 2px 2px;
+}
+
+.contactDIV{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.emailDIV{
+    width: 50%;
+    color: white;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+
+}
+.phnDIV{
+    width: 50%;
+    color: white;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+.inputtt{
+    width: 97%;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    margin: 2px 2px;
+}
+
+.query{
+    
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    margin: 20px 0px;  
+
+}
+textarea{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 250px;
+    min-height: 200px;
+    max-height: 400px;
+    padding: 10px;
+
+}
+.submitBTN{
+    width: 100px;
+    height: 35px;
+    color: rgb(36, 45, 111);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 20px 0px;
+}
+.allLinks{
+    background-color: rgb(88, 88, 88);
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* link 1 */
+.links1{
+    width: 20%;
+}
+
+.linkLogo{
+    height: 60px;
+    width: 200px;
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/whatsapp-dp-1-e1590747617997.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+.linkPara{
+    margin: 10px 5px;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.8;
+    word-spacing: 2px;
+    padding: 0px 15px 0px 0px;
+}
+
+/* quick Links 2 */
+.links2{
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.quickLinkHEADING{
+    color: white;
+    font-size: 1.5rem;
+}
+.quickLinkHEADING::after{
+    content: "";
+    width: 70%;
+    border: 2px dotted white;
+    position: absolute;
+    top: 40px;
+    left: 15%;
+}
+.quickLinks{
+    margin: 30px 0px 10px 0px;
+}
+.quickLinks:nth-child(n){
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* link - 3 */
+.links3{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.whatWeOfferHEADING{
+    color: white;
+    font-size: 1.5rem;
+}
+.whatWeOfferHEADING::after{
+    content: "";
+    width: 70%;
+    border: 2px dotted white;
+    position: absolute;
+    top: 40px;
+    left: 15%;
+}
+.link3Links{
+    /* div of two links right and left */
+
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.linkPart1,.linkPart2{
+    margin: 0px 10px;
+    width: 50%;
+    color: white;
+    
+}
+
+.LquickLink:nth-child(n),.RquickLink:nth-child(n){
+    margin: 15px 0px;
+    line-height: 1.5;
+
+}
+
+/* Link - 4 */
+.links4{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.addressHEADING{
+    height: 50px;
+    color: white;
+    font-size: 1.5rem;
+}
+.addressHEADING::after{
+    content: "";
+    width: 70%;
+    border: 2px dotted white;
+    position: absolute;
+    top: 40px;
+    left: 15%;
+}
+.addressLinks{
+    height: 60%;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 10px;
+    color: white;
+    margin: 0px 0px 50% 0px;
+}   
 
        
 
@@ -843,7 +1055,16 @@
 
 
 
+@media(max-width:375px)
+{
+   .box1,.box2 a{
+    display: none;
+   }
+   .box2innerC{
+            display: block;
+        }
 
+}
 
     </style>
 </head>
@@ -874,6 +1095,9 @@
             <a href="">Event</a>
             <a href="">Pricing</a>
             <a href="">Contact Us</a>
+        </div>
+        <div class="box2innerC">
+            <H1>==</H1>
         </div>
     </div>
     <div class="box3">
@@ -1150,13 +1374,165 @@
             <img src="img18.png" alt="">
         </div>
         <div class="box18formbox">
-            <form action="">
-                
-            </form>
+            <div class="forum">
+                <div class="nameDIV">
+                    <label for="">Name</label><br>
+                    <input class="inputt" type="text" name="" id="">
+                    <input class="inputt" type="text" name="" id="">
+                </div>
+                <div class="contactDIV">
+                    <div class="emailDIV">
+                        <label for="">Email</label><br>
+                        <input class="inputtt" type="email" name="" id="">
+                    </div>
+                    <div class="phnDIV">
+                        <label for="">Phone</label><br>
+                        <input class="inputtt" type="number" name="" id="">
+                    </div>
+
+                </div>
+                <div class="query">
+                    <label for="">Query</label><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                    <button class="submitBTN">SUBMIT</button>
+                </div>
+            </div>
+         </div>
         </div>
     </div>
 </div>
+<div class="allLinks">
+    <div class="links1">
+        <div class="linkLogo"></div>
+        <div class="linkPara">Our team is made up of highly dedicated professionals from many technological fields. Our main objective is to bridge the knowledge gap between business and academics via our training services.</div>
+    </div>
+    <!-- quick links -->
+    <div class="links2">
+        <div class="quickLinkHEADING">Quick Links</div>
+        <div class="quickLinks">
+            <div class="quickLink1">
+                <i class="fa-solid fa-angles-right"></i>
+                Home
+            </div>
+            <div class="quickLink2">
+                <i class="fa-solid fa-angles-right"></i>
+                About Us
+            </div>
+            <div class="quickLink3">
+                <i class="fa-solid fa-angles-right"></i>
+                Training Services
+            </div>
+            <div class="quickLink4">
+                <i class="fa-solid fa-angles-right"></i>
+                Programs
+            </div>
+            <div class="quickLink5">
+                <i class="fa-solid fa-angles-right"></i>
+                Events
+            </div>
+            <div class="quickLink6">
+                <i class="fa-solid fa-angles-right"></i>
+                Contact Us
+            </div>
+            <div class="quickLink7">
+                <i class="fa-solid fa-angles-right"></i>
+                Software Services
+            </div>
+            <div class="quickLink8">
+                <i class="fa-solid fa-angles-right"></i>
+                Our Placements
+            </div>
+            <div class="quickLink9">
+                <i class="fa-solid fa-angles-right"></i>
+                Blog
+            </div>
+        </div>
 
+    </div>
+
+    <!-- quick links -->
+    <div class="links3">                    
+        <div class="whatWeOfferHEADING">What We Offer</div>
+        <div class="link3Links">
+            <div class="linkPart1">
+                <div class="LquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    Web Applications
+                </div>
+                <div class="LquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    Data Analytics
+                </div>
+                <div class="LquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    Digital Marketing
+                </div>
+                <div class="LquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    SEO, SEM
+                </div>
+                <div class="LquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    Andriod/IOS Applications
+                </div>
+                <div class="LquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    Machine Learning & IoT based products
+                </div>
+            </div>
+            <div class="linkPart2">
+                <div class="RquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    Training Services
+                </div>
+                <div class="RquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    Competative Programming
+                </div>
+                <div class="RquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    Machine Learning & Deep Learning
+                </div>
+                <div class="RquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    BigData Tools
+                </div>
+                <div class="RquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    Cloud Computing (AWS)
+                </div>
+                <div class="RquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    Python-Django
+                </div>
+                <div class="RquickLink">
+                    <i class="fa-solid fa-angles-right"></i>
+                    App Development with Flutter
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- link - 4 -->
+    <div class="links4">
+        <div class="addressHEADING">Address</div>
+        <div class="addressLinks">
+            <div class="locationADD">
+                <i class="add fa-solid fa-location-dot"></i>
+                B-35, 2nd floor next to vasundhara colony, Gopalpura Bypass, Jaipur
+            </div>
+            <div class="phoneADD">
+                <i class="add fa-solid fa-phone"></i>
+                +91-9602880219, <br>
+                +91-78520716531
+            </div>
+            <div class="emailADD">
+                <i class="add fa-regular fa-envelope"></i>
+                info@regexsoftware.com
+            </div>
+        </div>
+    </div>
+  </div>
 
 </body>
 </html>
