@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" placeholder="enter value" id="inp1">
+    <input type="text" placeholder="enter value" id="inp2">
+    <select name="select" id="slc">
+        <option value="+">plus</option>
+        <option value="-">minus</option>
+        <option value="*">multiple</option>
+        <option value="/">divide</option> 
+    </select>
+    <h1 id="h"></h1>
+
+    <script>
+         document.getElementById("slc").onclick= function(){
+           let a = document.getElementById("slc").value;
+           console.log(a)
+
+        if(a=='+'){
+            let a = Number(document.getElementById("inp1").value);
+            let b = Number(document.getElementById("inp2").value);
+            // console.log(a+b)
+              document.getElementById("h").innerText = `Answer : ${a+b}`;
+        }
+
+        else if(a=='-'){
+            let a = Number(document.getElementById("inp1").value);
+            let b = Number(document.getElementById("inp2").value);
+            // console.log(a-b)
+            document.getElementById("h").innerText = `Answer : ${a-b}`;
+        }
+
+        else if(a=='*'){
+            let a = Number(document.getElementById("inp1").value);
+            let b = Number(document.getElementById("inp2").value);
+            // console.log(a*b)
+            document.getElementById("h").innerText = `Answer : ${a*b}`;
+        }
+        else if(a=='/'){
+            let a = Number(document.getElementById("inp1").value);
+            let b = Number(document.getElementById("inp2").value);
+            // console.log(a/b)
+            document.getElementById("h").innerText = `Answer : ${a/b}`;
+        }
+
+        
+    }
+
+    </script>
+</body>
+</html>
