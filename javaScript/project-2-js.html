@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #colour1{
+            background-color: green;
+            height: 30px;
+            width: 80px;
+            border: none;
+            border-radius: 50px;
+        }
+        #colour2{
+            background-color: red;
+            height: 30px;
+            width: 80px;
+            border: none;
+            border-radius: 50px;
+        }
+        #colour3{
+            background-color: aqua;
+            height: 30px;
+            width: 80px;
+            border: none;
+            border-radius: 50px;
+        }
+        #colour4{
+            background-color: black;
+            height: 30px;
+            width: 80px;
+            border: none;
+            border-radius: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+
+
+    <h1>Select your Domen</h1><br>
+    <select name="select" id="slc">
+        <option id="react" value="react">react</option>
+        <option id="angular" value="angular">angular</option>
+        <option id="aws" value="aws">aws</option>
+    </select><br><br>
+    <button id="colour1"></button>
+    <button id="colour2"></button>
+    <button id="colour3"></button>
+    <button id="colour4"></button>
+    <p id="p"></p><br>
+    <button id="uppercase">Upper case</button>
+    <button id="lowercase">Lower case</button>
+    <button id="-">-</button>
+    <button id="+">+</button>
+
+    <script>
+        document.getElementById("slc").onclick = function(){
+           let a = document.getElementById("slc").value;
+           console.log(a)
+           if(a=='react'){
+            document.getElementById("p").innerText ="vishal";
+           }
+
+           else if(a=='angular'){
+            document.getElementById("p").innerText ="kuldeep";
+           }
+           else if(a=='aws'){
+            document.getElementById("p").innerText ="rahul";
+           }
+        } 
+        document.getElementById("colour1").onclick = function(){
+            document.body.style.backgroundColor="green";
+        }
+        document.getElementById("colour2").onclick = function(){
+            document.body.style.backgroundColor="red";
+        }
+        document.getElementById("colour3").onclick = function(){
+            document.body.style.backgroundColor="aqua";
+        }
+        document.getElementById("colour4").onclick = function(){
+            document.body.style.backgroundColor="black";
+        }
+        document.getElementById("uppercase").onclick = function(){
+            document.getElementById("p").style.textTransform ="Uppercase"
+        }
+         document.getElementById("lowercase").onclick = function(){
+            document.getElementById("p").style.textTransform ="lowercase"
+        }
+        let a = 16;
+        document.getElementById("+").onclick = function(){
+            a++;
+            document.getElementById("p").style.fontSize = a + "px"
+        }
+         document.getElementById("-").onclick = function(){
+            a--;
+            document.getElementById("p").style.fontSize = a + "px"
+        }
+        
+
+    </script>
+
+</body>
+</html>
