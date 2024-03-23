@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inp1" type="text" placeholder="please enter">
+    <textarea name="" id="inp2" cols="30" rows="10"></textarea>
+    <input type="text">
+    <script>
+        let a= document.querySelector("#inp1");
+        a.onkeyup=function(){
+            document.querySelector("#inp2").innerText=a.value;
+        }
+    </script>
+</body>
+</html>

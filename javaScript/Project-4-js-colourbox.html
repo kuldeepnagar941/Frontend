@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            /* border: 2px solid black; */
+        }
+        .box{
+            border: 2px solid black;
+            width: 50%;
+            height: 42vh;
+            margin-left: 500px;
+            margin-top: 20px;
+        }
+        .box1{
+            border: 2px solid black;
+            width: 24%;
+            height: 20vh;
+        }
+
+        .box1-1,.box1-2{
+            margin-top: 4px;
+            /* border: 2px solid green; */
+            height: 20vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="margin-top: 100px;width: 30%;margin-left: 500px;">
+        <input type="text" placeholder="enter colour" id="inp1">
+        <input type="text" placeholder="enter number of box" id="inp2">
+        <button>Submit</button>
+    </div>
+
+    <div class="box">
+        <div class="box1-1">
+            <div class="box1">1</div>
+            <div class="box1">2</div>
+            <div class="box1">3</div>
+            <div class="box1">4</div>
+        </div>
+        <div class="box1-2">
+            <div class="box1">5</div>
+            <div class="box1">6</div>
+            <div class="box1">7</div>
+            <div class="box1">8</div>
+        </div>
+    </div>
+
+
+    <script>
+       let btn= document.querySelector("button");
+       btn.addEventListener("click" ,function(){
+        let a=document.querySelector("#inp1").value;
+        let b=document.querySelector("#inp2").value;
+
+        let div=document.querySelectorAll(".box1");
+        for(let i in div){
+            if(i==b-1)
+            div[i].style.backgroundColor= a;
+        }
+       })
+        
+    </script>
+    
+</body>
+</html>
