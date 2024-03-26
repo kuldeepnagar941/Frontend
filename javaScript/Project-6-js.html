@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            display: flex;
+            
+           
+        }
+        .box1{
+            border: 1px solid black;
+            padding: 0px 50px;
+            
+        }
+        .box2{
+            border: 1px solid black;
+            padding: 0px 50px;
+            
+        }
+        h1{
+            font-family: sans-serif;
+            font-size: x-large;
+        }
+        .box2{
+            display: flex;
+            align-items: center;
+        }
+        .box3{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 50px;
+            
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <h1>Image:</h1>
+            <input type="text" id="inp1" placeholder="image link">
+            <h1>Name:</h1>
+            <input type="text" id="inp2" placeholder="Enter your name">
+            <h1>Email:</h1>
+            <input type="text" id="inp3" placeholder="Enter your email">
+            <h1>Course:</h1>
+            <input type="text" id="inp4" placeholder="Enter your course">
+            <h1>Mobile number:</h1>
+            <input type="text" id="inp5" placeholder="Enter your mobile no.">
+        </div>
+        <div class="box2">
+            <div class="box3">
+                 <img src="" alt="" id="img"> 
+            </div>
+            <div class="box4">
+                <dd>
+                    <li>Name : <span id="s1"></span > </li>
+                    <li>Email : <span id="s2"></span ></li>
+                    <li>Course : <span id="s3"></span > </li>
+                    <li>Mobile no. : <span id="s4"></span > </li>
+                </dd>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let i=document.querySelector("#inp1");
+        i.onkeyup=function(){
+            document.querySelector("#img").src=i.value;
+        }
+        let a=document.querySelector("#inp2");
+        a.onkeyup=function () {
+            document.querySelector("#s1").innerText=a.value;
+        }
+        let b=document.querySelector("#inp3");
+        b.onkeyup=function(){
+            document.querySelector("#s2").innerText=b.value;
+        }
+        let c=document.querySelector("#inp4");
+        c.onkeyup=function(){
+            document.querySelector("#s3").innerText=c.value;
+        }
+        let d=document.querySelector("#inp5");
+        d.onkeyup=function(){
+            document.querySelector("#s4").innerText=d.value;
+        }
+    </script>
+</body>
+</html>
