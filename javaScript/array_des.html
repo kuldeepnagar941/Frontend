@@ -6,6 +6,43 @@
     <title>Document</title>
 </head>
 <body>
-<script src="array_des.js"></script>
+
+    <input type="text">
+    <button>submit</button>
+    <button id="pop">pop</button>
+
+<script >
+    // let [a,b] = [10,20];
+// console.log(a);
+
+
+// let x=[1,2,43,"mohit"]
+// x.push("kuldeep")
+// x.pop();
+// x.shift()
+// x.unshift("kuldeep")
+// console.log(x)
+
+
+// "first value replace by last value"
+// let x=[1,2,3,"kuldeep","vishan",4,5,6]
+// let last_value= x.pop();
+// let first_value= x.shift();
+// x.unshift(last_value);
+// x.push(first_value);
+// console.log(x)
+
+let x=[];
+document.querySelector("button").onclick = function(){
+    let a=document.querySelector("input").value;
+    x.push(a)
+    console.log(x)
+}
+document.querySelector("#pop").onclick = function(){
+    x.pop(x)
+    console.log(x)
+}
+
+</script>
 </body>
 </html>
