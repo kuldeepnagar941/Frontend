@@ -112,3 +112,11 @@
     //   })
     // })
 
+ 
+    let my_api_data = fetch('https://dummyjson.com/products')
+    my_api_data.then((Response)=>{
+      Response.json().then((data)=>
+       data.user.map((item)=>{
+        console.log(item.id,item.firstName)
+    }))
+    })
