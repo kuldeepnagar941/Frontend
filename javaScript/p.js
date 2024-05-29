@@ -6,3 +6,4 @@ let email = "kuldeep@123"
 let age = 18
 
 console.log(typeof email)
+console.log("hello world")
